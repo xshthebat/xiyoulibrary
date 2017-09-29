@@ -1,0 +1,42 @@
+@media screen and (min-width: 768px)
+{
+    #header
+    {
+        font-size: 5rem;
+        line-height: 100px;
+
+        height: 100px;
+    }
+    #nav
+    {
+        font-size: 30px;
+        line-height: 60px;
+
+        bottom: 0;
+
+        height: 90px;
+    }
+    #login
+    {
+        width: 30vw;
+        height: 30vh;
+        margin: 15vh 35vw 0 35vw;
+    }
+    .login_name
+    {
+        font-size: 2.0rem;
+
+        display: inline-block;
+    }
+    .login_input
+    {
+        width: 13vw;
+    }
+   #login_submit
+{
+	width: 100px;
+	height: 30px;
+	display: inline-block;
+}
+
+}

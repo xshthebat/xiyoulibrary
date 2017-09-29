@@ -1,0 +1,31 @@
+#login
+{
+	width: 80vw;
+	height: 25vh;
+	position: relative;
+	margin: 10vh 10vw 0 10vw;
+	border: 1px solid #000000;
+}
+ #person_login
+    {
+    	width: 60%;
+    	display: inline-block;
+    	position: absolute;
+    	left:20%;
+    	top:10%;
+    }
+#login_submit
+{
+	width: 100px;
+	height: 30px;
+	display: inline-block;
+	margin: 0 auto;
+}
+#login_prompt
+{
+	width: 100px;
+	display: inline-block;
+	line-height: 1rem;
+	font-size: 1rem;
+	color:red;
+}

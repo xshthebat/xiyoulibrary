@@ -1,0 +1,40 @@
+1.登陆，API名：login(必选参数： username（用户名）,password（密码）)
+2.用户信息  API名：info  必选参数： session（登陆成功后回传的Session）
+3.用户借阅历史，API名：history 必选参数： session（登陆成功后回传的Session）
+4.用户当前借阅情况，API名：rent 必选参数： session（登陆成功后回传的Session）
+5.图书续借，API名：renew 必选参数：
+session（登陆成功后回传的Session）
+barcode（查询续借的图书时所获取的图书馆内部条形码）
+department_id（查询续借的图书时所获取的书库ID号）
+library_id（查询续借的图书时所获取的分馆ID号）
+6.图书收藏，API名：favorite
+必选参数： session（登陆成功后回传的Session）
+7.图书收藏(带图片)，API名：favoriteWithImg
+必选参数： session（登陆成功后回传的Session）
+8.添加图书收藏，API名：addFav
+? 必选参数：
+session（登陆成功后回传的Session）
+id(图书馆内控制号)
+9.删除图书收藏，API名: delFav  必选参数：
+session（登陆成功后回传的Session）
+id(图书馆内控制号)
+username(用户名eg：S04111176)
+
+10.修改密码，API名：modifyPassword
+必选参数：
+
+session (登陆成功后回传的Session)
+username (用户名eg：S04111176)
+password (当前密码)
+newpassword (新密码)
+repassword (确认新密码)
+
+11.公告、新闻列表，API名：getList
+ type（“news”（新闻）、“announce”（公告）供选，其他值则报错） page（所查询的公告页数，超出范围返回最后一页，最新为1，不填报错）
+12.公告、新闻详情，API名：getDetail
+必选参数： type（“news”（新闻）、“announce”（公告）供选，其他值则报错） format（“html”（正文使用HTML格式）、“text”（正文使用纯文本格式）供选，其他值则报错） id（从列表中获取到的新闻或公告的id）
+13图书检索，API名：search  必选参数： keyword（关键词，必须对特殊符号，如“#、%、$”等
+，进行URL转义处理，否则不被识别）
+14..图书详情，API名：detail
+15.排行榜，API名：rank
+

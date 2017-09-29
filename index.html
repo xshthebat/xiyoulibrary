@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>西邮图书馆</title>
+	<meta >
+	<link rel="stylesheet" href="css/cssreset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/person.css">
+	<link rel="stylesheet" href="css/media.css">
+	<meta name="description" content="西邮移动应用实验室:西邮图书馆"/>
+	<meta name="author" content="许世豪(web组), 609363067@qq.com"/>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+</head>
+<body>
+	<div class="header" id="header">西邮图书馆</div>
+	<div class="contant" id="contant">
+		<div class="contants dn" id="contants_home">
+			<div class="contants_home_nav" id="contants_home_nav">
+				<li class="contants_home_nav_tab"><a href="#" class="home_nav_tab_a">公告</a></li>
+				<li class="contants_home_nav_tab"><a href="#" class="home_nav_tab_a">新闻</a></li>
+			</div>
+			<div  class="home_contants" id="contants_home_notice"></div>
+			<div class="home_contants dn" id="contants_home_news"></div>
+		</div>
+		<div class="contants dn" id="contants_collect"></div>
+		<div class="contants dn" id="contants_search"></div>
+		<div class="contants dn" id="contants_person">
+			<div id="login" class="dn">
+				<form action="#" name="person" id="person_login">
+                 <p class="login_name">账号:</p>
+                 <input type="text" maxlength="8" minlength="8" placeholder="例:0416XXXX" class="login_input" id="login_input_username" onkeyup="this.value=this.value.replace(/[^\d]/ig,'')">
+                 <p class="login_name">密码:</p>
+                 <input type="password"  class="login_input" id="login_input_password">
+                 <input type="submit" value="登陆" id="login_submit">
+				</form>
+				<p id="login_prompt"></p>
+			</div>
+			<div id="login_success">
+			</div>
+		</div>
+	</div>
+	<div class="nav" id="nav">
+		<ul class="nav_ul" id="nav_ul">
+			<li class="nav_ul_li" id="nav_home"><a href="#"></a></li>
+			<li class="nav_ul_li" id="nav_collect"><a href="#"></a></li>
+			<li class="nav_ul_li" id="nav_search"><a href="#"></a></li>
+			<li class="nav_ul_li" id="nav_person"><a href="#"></a></li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/setbase.js"></script>
+</html>
